@@ -2,7 +2,7 @@ require "humans/version"
 
 module Humans
 
-  def generate
+  def self.generate
     people = `git log --format='%aN|%aE' | sort -u`.split
 
     File.open('humans.txt', 'w') do |f|
@@ -21,7 +21,7 @@ module Humans
         Email: #{ email} 
 
         eos
-        
+
       end
 
     end
