@@ -22,11 +22,13 @@ eos
 Name:  #{ name }
 Email: #{ email } 
 
-        eos
+eos
 
       end
 
     end
+
+  `cat humans.txt`
 
   end
 
