@@ -4,4 +4,4 @@ require 'humans'
 
 Humans.generate
 
-print "humans.txt generated."
+puts "humans.txt generated."

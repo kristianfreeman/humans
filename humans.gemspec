@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["kristian@redsashimi.com"]
   gem.description   = %q{humans.txt helper}
   gem.summary       = %q{Creates basic humans.txt from git log}
-  gem.homepage      = "http://github.com/imkmf/humans"
+  gem.homepage      = "http://github.com/redsashimi/humans"
 
   gem.add_development_dependency "rspec"
 

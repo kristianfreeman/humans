@@ -28,7 +28,7 @@ eos
 
     end
 
-  `cat humans.txt`
+  puts `cat humans.txt`
 
   end
 
