@@ -14,8 +14,9 @@ module Humans
 eos
 
       people.each do |w|
-        name, *email = w.to_s.split("|")
-        email.to_s.gsub!(/\[|\"\]/, "")
+        name, match, email = w.rpartition('|')
+        name.gsub!(/[^0-9a-z ]/i, '')
+        email.gsub!(/[^0-9a-z \@\.]/i, '')
 
         f << <<-eos
 Name:  #{ name }
